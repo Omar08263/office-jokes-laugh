@@ -1,7 +1,10 @@
 import { chmodSync, mkdirSync, writeFileSync } from "node:fs";
 
-// One-line office joke, 107 characters, verified against the gate:
+// One-line office joke, 107 characters / 109 bytes, verified against the gate:
 // UTF-8 text of 1 to 199 characters, a single line, not only whitespace.
+// The joke turns twice: first the meeting about the out-of-office itself,
+// then the calendar saying yes while the manager says no. The em dash is
+// part of the joke's punctuation and counts as one character (3 bytes).
 const JOKE =
   "I put my out-of-office on for a meeting about my out-of-office — the calendar accepted, my manager did not.";
 
